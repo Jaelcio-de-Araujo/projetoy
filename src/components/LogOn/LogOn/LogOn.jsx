@@ -17,8 +17,9 @@ import {
 import { NavLink } from 'react-router-dom';
 
 const LoginComponent = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // Definindo email e senha padrão
+  const [email, setEmail] = useState('usuario@exemplo.com');
+  const [password, setPassword] = useState('senha123');
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
