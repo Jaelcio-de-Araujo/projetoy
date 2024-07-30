@@ -1,0 +1,46 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+  }
+  .content-with-sidebar {
+    display: flex;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    margin-top: 75px; /* Altura do Header */
+    margin-left: 200px; /* Largura da Sidebar */
+  }
+  
+  .main-content {
+    padding: 20px;
+    /* Outros estilos conforme necessário */
+  }
+
+  #h1{
+    color: #183859;
+  }
+
+  #importcad{
+    margin-left: 810px !important;
+    font-size: 16px !important;
+    color: #183859 !important;
+    border: solid 1px #183859 !important;
+    border-radius: 4px;
+    padding: 10px ;
+    cursor: pointer;
+    text-decoration: none;
+    background: #fff !important;
+  }
+
+  #import:hover{
+    background-color: #183859 !important;
+    color: #fff !important;
+  }
+  
+  @media (max-width: 768px) {
+    .content-with-sidebar {
+      margin-top: 75px; /* Ajuste para telas menores se necessário */
+      margin-left: 0; /* Remove a margem quando a Sidebar não estiver visível */
+    }
+  }
+  

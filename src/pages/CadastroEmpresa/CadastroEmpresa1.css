@@ -1,0 +1,129 @@
+#user-formNovo1 {
+    gap: 24px;
+    margin-top: 50px;
+    border-bottom: 1px solid #abaca5;
+    padding-bottom: 50px;
+}
+
+#form-groupNovo {
+    display: grid;
+    grid-template-columns: repeat(4,  1fr) ;    
+    grid-template-rows: auto;
+}
+
+
+
+#form-groupNovo input{
+    padding: 8px;
+    border: 1px solid #abaca5; /* Borda cinza */
+    color: #000;
+    border-radius: 4px;
+    font-size: 14px;
+    outline-color: #abaca5;
+}
+
+
+#formGridScope1,
+#formGridSegmento1,
+#formGridCNPJ1,
+#formGridNomeFantasia1,
+#formGridRazaoSocial1,
+#formGridSAC1,
+#formGridTel1,
+#formGridCel1 {
+    color: #000;
+    border: 1px solid #abaca5; /* Borda cinza */
+}
+
+
+#formGridScope1::placeholder ,
+#formGridSegmento1::placeholder,
+#formGridCNPJ1::placeholder,
+#formGridNomeFantasia1::placeholder,
+#formGridRazaoSocial1::placeholder,
+#formGridSAC1::placeholder,
+#formGridTel1::placeholder,
+#formGridCel1::placeholder  {
+    color: #000 !important;
+   
+}
+
+
+#form-groupNovo{
+    margin-top: 30px;
+}
+
+#form-groupNovo input{
+    padding: 8px;
+    border: 1px solid #abaca5; /* Borda cinza */
+    color: #000;
+    border-radius: 4px;
+    font-size: 14px;
+    outline-color: #abaca5;
+}
+
+#End{
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color:  #183859;
+  }
+
+
+#formGridCEP1,
+#formGridRua1,
+#formGridNumero1,
+#formGridComplemento1,
+#formGridBairro1,
+#formGridEstado1,
+#formGridCidade1 {
+    color: #000;
+    border: 1px solid #abaca5; /* Borda cinza */
+}
+
+
+#formGridCEP1::placeholder ,
+#formGridRua1::placeholder,
+#formGridNumero1::placeholder,
+#formGridComplemento1::placeholder,
+#formGridBairro1::placeholder,
+#formGridEstado1::placeholder,
+#formGridCidade1::placeholder  {
+    color: #000 !important;
+   
+}
+
+
+
+
+#form-groupNovo3 {
+    display: grid;
+    grid-template-columns: repeat(1,  2fr) ;
+    width: 51%;
+    margin-top: 40px;
+}
+
+
+
+#form-groupNovo3 input{
+    padding: 8px;
+    border: 1px solid #abaca5; /* Borda cinza */
+    color: #000;
+    border-radius: 4px;
+    font-size: 14px;
+    outline-color: #abaca5;
+}
+
+
+#formGridUsuario1,
+#formGridEmail1 {
+    color: #000;
+    border: 1px solid #abaca5; /* Borda cinza */
+}
+
+
+#formGridUsuario::placeholder ,
+#formGridEmail1::placeholder {
+    color: #000 !important;
+   
+}

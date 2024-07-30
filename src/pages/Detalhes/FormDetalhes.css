@@ -1,0 +1,22 @@
+#formdetalhesdeanalise{
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+#formGridEscopo,
+#formGridFamilia,
+#formGridNomecomercial,
+#formGridResponsavel{
+    color: #000;
+    border: 1px solid #abaca5; /* Borda cinza */
+}
+
+
+#formGridEscopo::placeholder ,
+#formGridFamilia::placeholder,
+#formGridNomecomercial::placeholder,
+#formGridResponsavel::placeholder  {
+    color: #000 !important;
+   
+}
