@@ -17,21 +17,18 @@ import {
 import { NavLink } from 'react-router-dom';
 
 const LoginComponent = () => {
-  // Definindo email e senha padrão
-  const [email, setEmail] = useState('usuario@exemplo.com');
-  const [password, setPassword] = useState('senha123');
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/login', { email, password });
-      const { token } = response.data;
+      // Simulando uma resposta de sucesso sem verificar credenciais
+      const token = 'dummy-token';
       localStorage.setItem('token', token);
       setMessage('Login bem-sucedido!');
     } catch (error) {
-      setMessage('Usuário ou senha incorretos!');
+      setMessage('Ocorreu um erro!');
     }
   };
 
@@ -45,24 +42,7 @@ const LoginComponent = () => {
           <StyledRightCol md={6} className="login-right">
             <StyledForm onSubmit={handleSubmit} className="login-form">
               <StyledH2>Autenticação</StyledH2>
-              <Form.Group controlId="formEmail">
-                <Form.Label>E-mail*</Form.Label>
-                <Form.Control
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </Form.Group>
-              <Form.Group controlId="formPassword">
-                <Form.Label>Senha*</Form.Label>
-                <Form.Control
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-              </Form.Group>
+              {/* Removendo os campos de email e senha */}
               {message && <ErrorMessage>{message}</ErrorMessage>}
               <StyledButton type="submit" className="login-button" variant="success">Entrar</StyledButton>
               <NavLink to='/Autenticacao'>
