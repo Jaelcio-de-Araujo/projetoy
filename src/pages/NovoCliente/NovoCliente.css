@@ -1,0 +1,43 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .content-with-sidebar {
+    display: flex;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    margin-top: 75px; /* Altura do Header */
+    margin-left: 200px; /* Largura da Sidebar */
+  }
+
+  #p{
+    font-size: 12px;
+  }
+  #p2{
+    font-size: 16px;
+    margin-top: 180px;
+
+    margin-bottom: -345px;
+    color:  #183859;
+  }
+
+  #p3{
+    font-size: 16px;
+    color:  #183859;
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
+
+  #h1{
+    margin-top: 25px;
+    font-size: 26px;
+  }
+  
+  @media (max-width: 768px) {
+    .content-with-sidebar {
+      margin-top: 75px; /* Ajuste para telas menores se necessário */
+      margin-left: 0; /* Remove a margem quando a Sidebar não estiver visível */
+    }
+  }

@@ -1,0 +1,11 @@
+
+
+#acoes{
+    cursor: pointer;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 40px;
+    color: #183859;
+    background: #fff;
+    border: none;
+}

@@ -1,0 +1,64 @@
+
+
+
+#Userform { 
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px;
+}
+
+#formgroupUser {
+    grid-template-columns: repeat(4, 2fr) !important;
+    grid-template-rows: repeat(1) !important;
+    display: grid;
+}
+
+#formgroupUser input,
+#formgroupUser option {
+    padding: 8px;
+    border: 1px solid #abaca5; /* Borda cinza */
+    color: #000;
+    border-radius: 4px;
+    font-size: 14px;
+    outline-color: #abaca5;
+}
+
+#formgroupUser input::placeholder,
+#formgroupUser option::placeholder {
+    color: #000; /* Placeholder preto */
+}
+
+#form-buttons {
+    grid-column: span 4; 
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center; /* Alinha verticalmente os botões */
+}
+
+#search-button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #183859;
+    border: 1px solid #183859;
+    margin-top: -35px;  
+}
+#clear-button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #183859;
+    border: 1px solid #183859;
+    margin-top: -35px;   
+}
+#search-button:hover,
+#clear-button:hover{
+   background: #183859;
+   color: #fff;
+}

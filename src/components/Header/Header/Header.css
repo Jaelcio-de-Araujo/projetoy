@@ -1,0 +1,140 @@
+.header {
+  background-color: #183859 !important;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  height: 75px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Tornar o header fixo */
+  width: 100%; /* Definir largura completa */
+  z-index: 1000; /* Ajustar o z-index para garantir que fique acima de outros elementos */
+  top: 0; /* Alinhar no topo */
+}
+
+.logo {
+  max-height: 65px;
+}
+
+.systemName {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  margin-left: 20px; /* Aumentar a margem entre a logo e o texto */
+}
+
+.separator {
+  margin-right: 10px; /* Adicionar margem à direita do separador */
+}
+
+.separator img,
+.separator-two img {
+  opacity: 0.5;
+  height: 24px;
+}
+
+.font-button,
+.theme-button {
+  margin: 5px; /* Espaçamento menor entre os botões */
+  padding: 10px; /* Aumentar o espaço interno dos botões */
+  border-radius: 50%; /* Transformar os botões em forma circular */
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: none; /* Remover as bordas dos botões */
+}
+
+.theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Ajuste a largura */
+  height: 40px; /* Ajuste a altura */
+}
+
+.theme-button:focus {
+  outline: none; /* Remover a borda de foco */
+}
+
+.no-border {
+  border: none !important; /* Garantir que não haja borda */
+}
+
+.user-info-mobile {
+  margin: 20px 0; /* Espaçamento maior entre as informações do usuário */
+  text-align: center; /* Alinhar o texto centralmente */
+}
+
+.user-initial {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 26px; /* Aumentar o tamanho da fonte */
+  width: 50px; /* Ajustar a largura */
+  height: 50px; /* Ajustar a altura */
+  display: inline-flex; /* Centralizar o ícone de inicial do usuário */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white; /* Adicionar borda branca de 2 pixels */
+}
+
+.user-info-mobile .user-name,
+.user-info-mobile .user-profile {
+  margin-top: 5px; /* Espaçamento entre o nome e o perfil do usuário */
+}
+
+.user-name {
+  font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
+  font-weight: bold; /* Ajuste o peso do texto conforme necessário */
+}
+
+.user-profile {
+  font-size: 14px; /* Ajuste o tamanho do texto conforme necessário */
+  font-weight: normal; /* Ajuste o peso do texto conforme necessário */
+}
+
+.menu-sanduiche {
+  background-color: #183859; /* Cor de fundo igual ao header */
+  position: absolute;
+  top: 75px; /* Altura do header */
+  width: 100%;
+  display: none;
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+  transform: translateX(-100%); /* Inicialmente esconder o menu sanduíche */
+  z-index: 999; /* Ajustar o z-index para garantir que fique abaixo do header */
+}
+
+.menu-sanduiche.open {
+  display: block;
+  transform: translateX(0); /* Mostrar o menu sanduíche quando aberto */
+}
+
+.header-container {
+  padding-left: 20px; /* Adicionar padding à esquerda */
+  padding-right: 20px; /* Adicionar padding à direita */
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    display: none; /* Ocultar o usuário info no menu principal */
+  }
+
+  .systemName {
+    margin-left: 0; /* Remover a margem à esquerda em telas menores */
+  }
+
+  .system-name-text {
+    font-size: 18px; /* Ajustar o tamanho do texto "TecIT" para telas menores */
+  }
+
+  .menu-sanduiche {
+    display: none; /* Esconder o menu sanduíche por padrão em telas maiores */
+  }
+}

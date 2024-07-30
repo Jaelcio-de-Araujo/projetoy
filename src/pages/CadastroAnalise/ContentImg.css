@@ -1,0 +1,28 @@
+#containerimg{
+    width: 190px;
+    height: 160px;
+    border: solid 1px #A5A49E;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+}
+
+#frase{
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    font-size: 20px;
+    color: #000;
+    margin-top: 50px;
+}
+
+#editimg{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    margin-left: 170px;
+    
+    
+    
+}

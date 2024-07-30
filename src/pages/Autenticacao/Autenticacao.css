@@ -1,0 +1,132 @@
+/*
+cores do projeto
+#183859 azul
+#abaca5 cinza
+#00c65e verde
+*/
+
+/* Estilos gerais */
+#body-register{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden!important;
+}
+
+#conteiner-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+    background-color:	#DCDCDC; /* Cor de fundo específica para esta página */
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+#logoaut{
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+#right-register{
+    background-color: #183859;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    border-top-left-radius: 10px; /* Arredondamento na borda superior direita */
+    border-bottom-left-radius: 10px; /* Arredondamento na borda inferior direita */
+    width: 400px;
+    height: 450px; /* Ajuste a altura conforme você julgar necessário */
+
+}
+
+
+/* Estilos do Card */
+#card-register {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    border-top-right-radius: 10px; /* Arredondamento na borda superior direita */
+    border-bottom-right-radius: 10px; /* Arredondamento na borda inferior direita */
+    width: 400px;
+    height: 450px; /* Ajuste a altura conforme você julgar necessário */
+}
+
+#campos{
+    width: 80%;
+    margin-left: 30px;
+
+}
+
+/* Estilos do Header */
+#card-register h1 {
+    text-align: center;
+    color: #183859;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+/* Estilos do Botão */
+#btn-register {
+    width: 50%;
+    padding: 10px;
+    background-color:#abaca5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 90px; 
+}
+
+#btn-register:hover {
+    background-color: #00c65e;
+}
+
+
+
+
+
+
+/* Estilos para tablets  */
+@media (min-width: 768px) {
+    main {
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .card-register{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Estilos para desktops  */
+@media (min-width: 1024px) {
+    main {
+        justify-content: flex-start;
+        padding-left: 100px;
+    }
+
+    .right-register{
+        width: 350px;
+    }
+}
+
+/* Estilos para desktops maiores */
+@media (min-width: 1200px) {
+    main {
+        justify-content: flex-start;
+        padding-left: 200px;
+    }
+
+    .card-register {
+        width: 400px;
+    }
+}

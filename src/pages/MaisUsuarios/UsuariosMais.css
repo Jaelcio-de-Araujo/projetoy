@@ -1,0 +1,29 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .content-with-sidebar {
+    display: flex;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    margin-top: 75px; /* Altura do Header */
+    margin-left: 200px; /* Largura da Sidebar */
+  }
+
+  #p{
+    font-size: 12px;
+  }
+
+  #h1{
+    margin-top: 25px;
+    font-size: 26px;
+  }
+  
+  @media (max-width: 768px) {
+    .content-with-sidebar {
+      margin-top: 75px; /* Ajuste para telas menores se necessário */
+      margin-left: 0; /* Remove a margem quando a Sidebar não estiver visível */
+    }
+  }

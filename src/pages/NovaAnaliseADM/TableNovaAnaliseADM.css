@@ -1,0 +1,10 @@
+#acoes-adm{
+    cursor: pointer;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 10px !important;
+    color: #183859;
+    background: #fff;
+    border: none;
+}
+

@@ -1,0 +1,79 @@
+
+#modal-import{
+    width: 840px;
+    height: 170px;
+    background: #fff;
+    border-radius: 4px; /* Bordas arredondadas */
+}
+#modal-importclose{
+    width: 840px;
+    margin-left: -16px;
+    background: #fff;
+}
+
+
+/* Estilo para o texto */
+#texto {
+    width: 840px;
+    font-size: 18px; 
+    color: #183859; 
+    margin: 0; /* Remove margem */
+    text-align: left; /* Alinhamento centralizado */
+    background: #fff;
+    margin-left: -16px;
+}
+
+/* Estilo para o título */
+#titulo2 {
+    
+    background: #fff;
+    font-size: 18px;
+    color: #183859; 
+    margin: 0; /* Remove margem */
+    width: 100%;
+    
+}
+
+/* Estilo para o container dos botões */
+#button-import {
+    background: #fff;
+    display: flex; /* Uso do flexbox para layout */
+    gap: 24px; /* Espaço entre os botões */
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    padding: 20px;
+    width: 840px;
+    margin-left: -16px;
+   
+}
+
+
+/* Estilo para o botão de cancelar */
+#baixar2{
+    background-color: #fff; 
+    color: #183859; 
+    border: solid 1px #183859; 
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px 30px; /* Padding interno */
+    cursor: pointer; /* Cursor do mouse */
+    font-size: 14px; /* Tamanho da fonte */
+}
+/* Estilo para o botão de excluir */
+#import2 {
+    background-color: #fff;
+    color: #183859; 
+    border: solid 1px #183859; 
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cursor do mouse */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão quando o mouse passa sobre ele */
+#baixar2:hover,
+#import2:hover {
+    background: #183859;
+    color: #fff;
+    opacity: 0.8; /* Transparência */
+}
