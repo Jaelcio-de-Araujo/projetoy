@@ -14,10 +14,11 @@ import {
   ForgotPassword,
   Policy
 } from './LoginStyles'; // Importe os estilos do arquivo LoginStyles.js
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const LoginComponent = () => {
   const [message, setMessage] = useState('');
+  const navigate = useNavigate(); // Hook para navegação
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ const LoginComponent = () => {
       const token = 'dummy-token';
       localStorage.setItem('token', token);
       setMessage('Login bem-sucedido!');
+      navigate('/inicio'); // Redireciona para a página /inicio
     } catch (error) {
       setMessage('Ocorreu um erro!');
     }
